@@ -1,17 +1,4 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
-
-#include "../common.h"
-
-#include "../entities/debris.h"
-#include "../game/effects.h"
-#include "../game/stage.h"
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "../system/sound.h"
-#include "../system/util.h"
-#include "oilDrum.h"
+#include "header.h"
 
 #define NUM_TEXTURES 3
 

@@ -1,15 +1,4 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
-
-#include "../common.h"
-
-#include "../entities/debris.h"
-#include "../game/effects.h"
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "../system/sound.h"
-#include "doors.h"
+#include "header.h"
 
 extern App	 app;
 extern Stage stage;

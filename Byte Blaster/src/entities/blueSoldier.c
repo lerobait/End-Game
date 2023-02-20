@@ -1,18 +1,4 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
-
-#include "../common.h"
-
-#include "../entities/debris.h"
-#include "../game/ai.h"
-#include "../game/bullets.h"
-#include "../game/effects.h"
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "../system/sound.h"
-#include "../system/util.h"
-#include "blueSoldier.h"
+#include "header.h"
 
 #define RELOAD_SPEED 18
 #define BULLET_SPEED 8

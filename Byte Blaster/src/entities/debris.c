@@ -1,14 +1,4 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
-
-#include "../common.h"
-
-#include "../game/effects.h"
-#include "../game/entityFactory.h"
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "debris.h"
+#include "header.h"
 
 #define NUM_TEXTURES 4
 
