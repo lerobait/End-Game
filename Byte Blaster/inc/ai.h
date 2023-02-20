@@ -2,4 +2,4 @@
  * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
  */
 
-int canSeePlayer(int x, int y);
+int canSeePlayer(Entity *e);
