@@ -1,7 +1,3 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
-
 #include "common.h"
 
 #include "game/stage.h"
@@ -49,7 +45,6 @@ int main(int argc, char *argv[])
 
 		presentScene();
 
-		/* allow the CPU/GPU to breathe */
 		SDL_Delay(1);
 
 		app.deltaTime = LOGIC_RATE * (SDL_GetTicks() - then);
@@ -64,7 +59,6 @@ static void logic(void)
 {
 	double tmpDelta;
 
-	/* don't exceed target logic rate */
 	while (app.deltaTime > 1)
 	{
 		tmpDelta = app.deltaTime;

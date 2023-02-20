@@ -1,7 +1,3 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
-
 #include <SDL2/SDL_image.h>
 
 #include "../common.h"
@@ -77,7 +73,6 @@ static void loadAtlasData(void)
 
 		a = &atlases[i];
 
-		/* horrible bit to look for the tail */
 		while (a->next)
 		{
 			a = a->next;
