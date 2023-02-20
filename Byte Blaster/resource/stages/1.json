@@ -1,0 +1,792 @@
+[
+  {
+    "type": "player",
+    "x": 3010,
+    "y": 256
+  },
+  {
+    "type": "oilDrum",
+    "x": 958,
+    "y": 2416
+  },
+  {
+    "type": "oilDrum",
+    "x": 858,
+    "y": 2416
+  },
+  {
+    "type": "greenSoldier",
+    "x": 792,
+    "y": 592
+  },
+  {
+    "type": "blueSoldier",
+    "x": 1255,
+    "y": 400
+  },
+  {
+    "type": "greenSoldier",
+    "x": 1679,
+    "y": 400
+  },
+  {
+    "type": "greenSoldier",
+    "x": 2246,
+    "y": 400
+  },
+  {
+    "type": "greenSoldier",
+    "x": 2752,
+    "y": 400
+  },
+  {
+    "type": "oilDrum",
+    "x": 3577,
+    "y": 497
+  },
+  {
+    "type": "greenSoldier",
+    "x": 4153,
+    "y": 448
+  },
+  {
+    "type": "oilDrum",
+    "x": 4775,
+    "y": 228
+  },
+  {
+    "type": "greenSoldier",
+    "x": 5350,
+    "y": 208
+  },
+  {
+    "type": "blueSoldier",
+    "x": 5858,
+    "y": 352
+  },
+  {
+    "type": "greenSoldier",
+    "x": 6707,
+    "y": 544
+  },
+  {
+    "type": "blueSoldier",
+    "x": 6141,
+    "y": 928
+  },
+  {
+    "type": "oilDrum",
+    "x": 6387,
+    "y": 977
+  },
+  {
+    "type": "greenSoldier",
+    "x": 6983,
+    "y": 784
+  },
+  {
+    "type": "blueSoldier",
+    "x": 7325,
+    "y": 592
+  },
+  {
+    "type": "greenSoldier",
+    "x": 8085,
+    "y": 640
+  },
+  {
+    "type": "greenSoldier",
+    "x": 8513,
+    "y": 352
+  },
+  {
+    "type": "oilDrum",
+    "x": 7989,
+    "y": 257
+  },
+  {
+    "type": "greenSoldier",
+    "x": 7755,
+    "y": 208
+  },
+  {
+    "type": "blueSoldier",
+    "x": 8829,
+    "y": 448
+  },
+  {
+    "type": "oilDrum",
+    "x": 9250,
+    "y": 545
+  },
+  {
+    "type": "blueSoldier",
+    "x": 9553,
+    "y": 484
+  },
+  {
+    "type": "blueSoldier",
+    "x": 9044,
+    "y": 1648
+  },
+  {
+    "type": "blueSoldier",
+    "x": 9316,
+    "y": 1648
+  },
+  {
+    "type": "blueSoldier",
+    "x": 9560,
+    "y": 1648
+  },
+  {
+    "type": "oilDrum",
+    "x": 9837,
+    "y": 1601
+  },
+  {
+    "type": "blueSoldier",
+    "x": 426,
+    "y": 1120
+  },
+  {
+    "type": "blueSoldier",
+    "x": 860,
+    "y": 1360
+  },
+  {
+    "type": "blueSoldier",
+    "x": 1290,
+    "y": 1360
+  },
+  {
+    "type": "blueSoldier",
+    "x": 1655,
+    "y": 1552
+  },
+  {
+    "type": "oilDrum",
+    "x": 2103,
+    "y": 1668
+  },
+  {
+    "type": "blueSoldier",
+    "x": 2394,
+    "y": 1648
+  },
+  {
+    "type": "greenSoldier",
+    "x": 2786,
+    "y": 1648
+  },
+  {
+    "type": "greenSoldier",
+    "x": 3156,
+    "y": 1648
+  },
+  {
+    "type": "greenSoldier",
+    "x": 3649,
+    "y": 1648
+  },
+  {
+    "type": "blueSoldier",
+    "x": 4165,
+    "y": 1648
+  },
+  {
+    "type": "blueSoldier",
+    "x": 4526,
+    "y": 2128
+  },
+  {
+    "type": "blueSoldier",
+    "x": 5352,
+    "y": 2416
+  },
+  {
+    "type": "blueSoldier",
+    "x": 6193,
+    "y": 2032
+  },
+  {
+    "type": "oilDrum",
+    "x": 7048,
+    "y": 2225
+  },
+  {
+    "type": "greenSoldier",
+    "x": 6914,
+    "y": 2176
+  },
+  {
+    "type": "greenSoldier",
+    "x": 5404,
+    "y": 2704
+  },
+  {
+    "type": "greenSoldier",
+    "x": 5791,
+    "y": 2848
+  },
+  {
+    "type": "oilDrum",
+    "x": 6253,
+    "y": 3012
+  },
+  {
+    "type": "greenSoldier",
+    "x": 6860,
+    "y": 3136
+  },
+  {
+    "type": "greenSoldier",
+    "x": 6985,
+    "y": 3136
+  },
+  {
+    "type": "blueSoldier",
+    "x": 7569,
+    "y": 2944
+  },
+  {
+    "type": "greenSoldier",
+    "x": 8038,
+    "y": 2944
+  },
+  {
+    "type": "oilDrum",
+    "x": 8557,
+    "y": 2820
+  },
+  {
+    "type": "oilDrum",
+    "x": 8864,
+    "y": 2849
+  },
+  {
+    "type": "oilDrum",
+    "x": 9904,
+    "y": 3281
+  },
+  {
+    "type": "oilDrum",
+    "x": 9583,
+    "y": 3521
+  },
+  {
+    "type": "greenSoldier",
+    "x": 9915,
+    "y": 3808
+  },
+  {
+    "type": "greenSoldier",
+    "x": 9614,
+    "y": 3904
+  },
+  {
+    "type": "blueSoldier",
+    "x": 9157,
+    "y": 3904
+  },
+  {
+    "type": "oilDrum",
+    "x": 9212,
+    "y": 4356
+  },
+  {
+    "type": "greenSoldier",
+    "x": 9053,
+    "y": 4432
+  },
+  {
+    "type": "greenSoldier",
+    "x": 8650,
+    "y": 4432
+  },
+  {
+    "type": "blueSoldier",
+    "x": 8000,
+    "y": 4240
+  },
+  {
+    "type": "blueSoldier",
+    "x": 7282,
+    "y": 3904
+  },
+  {
+    "type": "blueSoldier",
+    "x": 6172,
+    "y": 4288
+  },
+  {
+    "type": "greenSoldier",
+    "x": 6466,
+    "y": 4096
+  },
+  {
+    "type": "greenSoldier",
+    "x": 6645,
+    "y": 3568
+  },
+  {
+    "type": "blueSoldier",
+    "x": 5864,
+    "y": 3808
+  },
+  {
+    "type": "oilDrum",
+    "x": 5579,
+    "y": 3857
+  },
+  {
+    "type": "greenSoldier",
+    "x": 4749,
+    "y": 3472
+  },
+  {
+    "type": "greenSoldier",
+    "x": 4793,
+    "y": 3856
+  },
+  {
+    "type": "blueSoldier",
+    "x": 4511,
+    "y": 3904
+  },
+  {
+    "type": "oilDrum",
+    "x": 4128,
+    "y": 3905
+  },
+  {
+    "type": "blueSoldier",
+    "x": 3674,
+    "y": 3808
+  },
+  {
+    "type": "greenSoldier",
+    "x": 2656,
+    "y": 4288
+  },
+  {
+    "type": "oilDrum",
+    "x": 2325,
+    "y": 4337
+  },
+  {
+    "type": "oilDrum",
+    "x": 2110,
+    "y": 4385
+  },
+  {
+    "type": "oilDrum",
+    "x": 1650,
+    "y": 3953
+  },
+  {
+    "type": "blueSoldier",
+    "x": 1272,
+    "y": 3856
+  },
+  {
+    "type": "blueSoldier",
+    "x": 832,
+    "y": 4384
+  },
+  {
+    "type": "blueSoldier",
+    "x": 226,
+    "y": 4384
+  },
+  {
+    "type": "oilDrum",
+    "x": 3700,
+    "y": 2496
+  },
+  {
+    "type": "oilDrum",
+    "x": 3800,
+    "y": 2496
+  },
+  {
+    "type": "oilDrum",
+    "x": 3900,
+    "y": 2496
+  },
+  {
+    "type": "oilDrum",
+    "x": 4000,
+    "y": 2496
+  },
+  {
+    "type": "oilDrum",
+    "x": 773,
+    "y": 3905
+  },
+  {
+    "type": "blueSoldier",
+    "x": 897,
+    "y": 3856
+  },
+  {
+    "type": "oilDrum",
+    "x": 5912,
+    "y": 4337
+  },
+  {
+    "type": "oilDrum",
+    "x": 5687,
+    "y": 4404
+  },
+  {
+    "type": "greenSoldier",
+    "x": 5298,
+    "y": 4432
+  },
+  {
+    "type": "blueSoldier",
+    "x": 4908,
+    "y": 4432
+  },
+  {
+    "type": "blueSoldier",
+    "x": 4183,
+    "y": 4432
+  },
+  {
+    "type": "oilDrum",
+    "x": 3477,
+    "y": 4241
+  },
+  {
+    "type": "greenSoldier",
+    "x": 3982,
+    "y": 4144
+  },
+  {
+    "type": "blueSoldier",
+    "x": 3837,
+    "y": 4144
+  },
+  {
+    "type": "greenSoldier",
+    "x": 3986,
+    "y": 2272
+  },
+  {
+    "type": "greenSoldier",
+    "x": 3644,
+    "y": 2320
+  },
+  {
+    "type": "greenSoldier",
+    "x": 2757,
+    "y": 2512
+  },
+  {
+    "type": "blueSoldier",
+    "x": 1920,
+    "y": 2512
+  },
+  {
+    "type": "oilDrum",
+    "x": 4825,
+    "y": 2724
+  },
+  {
+    "type": "blueSoldier",
+    "x": 4603,
+    "y": 2944
+  },
+  {
+    "type": "oilDrum",
+    "x": 4321,
+    "y": 3089
+  },
+  {
+    "type": "blueSoldier",
+    "x": 3981,
+    "y": 3136
+  },
+  {
+    "type": "oilDrum",
+    "x": 3126,
+    "y": 3329
+  },
+  {
+    "type": "greenSoldier",
+    "x": 2350,
+    "y": 3280
+  },
+  {
+    "type": "greenSoldier",
+    "x": 1877,
+    "y": 3616
+  },
+  {
+    "type": "oilDrum",
+    "x": 1378,
+    "y": 3617
+  },
+  {
+    "type": "greenSoldier",
+    "x": 597,
+    "y": 3328
+  },
+  {
+    "type": "greenSoldier",
+    "x": 89,
+    "y": 1984
+  },
+  {
+    "type": "greenSoldier",
+    "x": 491,
+    "y": 2032
+  },
+  {
+    "type": "oilDrum",
+    "x": 730,
+    "y": 2081
+  },
+  {
+    "type": "greenSoldier",
+    "x": 1464,
+    "y": 2416
+  },
+  {
+    "type": "blueSoldier",
+    "x": 596,
+    "y": 2656
+  },
+  {
+    "type": "oilDrum",
+    "x": 88,
+    "y": 2465
+  },
+  {
+    "type": "greenSoldier",
+    "x": 226,
+    "y": 2896
+  },
+  {
+    "type": "greenSoldier",
+    "x": 2357,
+    "y": 2032
+  },
+  {
+    "type": "oilDrum",
+    "x": 2076,
+    "y": 2081
+  },
+  {
+    "type": "blueSoldier",
+    "x": 9690,
+    "y": 2032
+  },
+  {
+    "type": "greenSoldier",
+    "x": 8692,
+    "y": 2032
+  },
+  {
+    "type": "oilDrum",
+    "x": 7908,
+    "y": 2081
+  },
+  {
+    "type": "oilDrum",
+    "x": 7382,
+    "y": 2052
+  },
+  {
+    "type": "oilDrum",
+    "x": 6921,
+    "y": 1841
+  },
+  {
+    "type": "greenSoldier",
+    "x": 6584,
+    "y": 1792
+  },
+  {
+    "type": "oilDrum",
+    "x": 6494,
+    "y": 1812
+  },
+  {
+    "type": "oilDrum",
+    "x": 6393,
+    "y": 1841
+  },
+  {
+    "type": "oilDrum",
+    "x": 5877,
+    "y": 1553
+  },
+  {
+    "type": "greenSoldier",
+    "x": 5102,
+    "y": 1264
+  },
+  {
+    "type": "greenSoldier",
+    "x": 4881,
+    "y": 1264
+  },
+  {
+    "type": "blueSoldier",
+    "x": 4407,
+    "y": 1168
+  },
+  {
+    "type": "blueSoldier",
+    "x": 3940,
+    "y": 1072
+  },
+  {
+    "type": "oilDrum",
+    "x": 3458,
+    "y": 1092
+  },
+  {
+    "type": "blueSoldier",
+    "x": 2870,
+    "y": 880
+  },
+  {
+    "type": "oilDrum",
+    "x": 2525,
+    "y": 833
+  },
+  {
+    "type": "blueSoldier",
+    "x": 2110,
+    "y": 736
+  },
+  {
+    "type": "greenSoldier",
+    "x": 1809,
+    "y": 784
+  },
+  {
+    "type": "blueSoldier",
+    "x": 1355,
+    "y": 928
+  },
+  {
+    "type": "greenSoldier",
+    "x": 785,
+    "y": 1024
+  },
+  {
+    "type": "greenSoldier",
+    "x": 1836,
+    "y": 1120
+  },
+  {
+    "type": "greenSoldier",
+    "x": 2601,
+    "y": 1312
+  },
+  {
+    "type": "oilDrum",
+    "x": 2932,
+    "y": 1380
+  },
+  {
+    "type": "oilDrum",
+    "x": 3295,
+    "y": 1313
+  },
+  {
+	"type" : "redDoor",
+	"x" : 6968,
+	"y" : 192
+  },
+  {
+	"type" : "redDoor",
+	"x" : 7736,
+	"y" : 576
+  },
+  {
+	"type" : "redDoor",
+	"x" : 6920,
+	"y" : 768
+  },
+  {
+	"type" : "weakDoor",
+	"x" : 392,
+	"y" : 4368
+  },
+  {
+	"type" : "greenDoor",
+	"x" : 4616,
+	"y" : 4416
+  },
+  {
+	"type" : "blueDoor",
+	"x" : 6632,
+	"y" : 2160
+  },
+  {
+	"type" : "blueDoor",
+	"x" : 7160,
+	"y" : 2064
+  },
+  {
+	"type" : "normalDoor",
+	"x" : 1304,
+	"y" : 2832
+  },
+  {
+	"type" : "normalDoor",
+	"x" : 3608,
+	"y" : 2496
+  },
+  {
+	"type" : "normalDoor",
+	"x" : 4136,
+	"y" : 2496
+  },
+  {
+	"type" : "weakDoor",
+	"x" : 9320,
+	"y" : 3888
+  },
+  {
+	"type" : "blueDoor",
+	"x" : 728,
+	"y" : 2400
+  },
+  {
+	"type" : "greenKeycard",
+	"x" : 1256,
+	"y" : 960
+  },
+  {
+	"type" : "blueKeycard",
+	"x" : 9944,
+	"y" : 3840
+  },
+  {
+	"type" : "redKeycard",
+	"x" : 536,
+	"y" : 3840
+  },
+  {
+	"type" : "oilDrum",
+	"x" : 9504,
+	"y" : 4416
+  },
+  {
+	"type" : "oilDrum",
+	"x" : 9600,
+	"y" : 4416
+  },
+  {
+	"type" : "oilDrum",
+	"x" : 9696,
+	"y" : 4416
+  }
+]

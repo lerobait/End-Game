@@ -1,0 +1,38 @@
+[
+	{
+		"type" : "WT_SLIDER",
+		"name" : "sound",
+		"groupName" : "options",
+		"x" : 520,
+		"y" : 275,
+		"label" : "Sound",
+		"step" : 10,
+		"waitOnChange" : 1
+	},
+	{
+		"type" : "WT_SLIDER",
+		"name" : "music",
+		"groupName" : "options",
+		"x" : 520,
+		"y" : 350,
+		"label" : "Music",
+		"step" : 1,
+		"waitOnChange" : 0
+	},
+	{
+		"type" : "WT_BUTTON",
+		"name" : "controls",
+		"groupName" : "options",
+		"x" : 520,
+		"y" : 450,
+		"label" : "Controls ..."
+	},
+	{
+		"type" : "WT_BUTTON",
+		"name" : "back",
+		"groupName" : "options",
+		"x" : 520,
+		"y" : 550,
+		"label" : "Back"
+	}
+]

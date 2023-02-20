@@ -1,0 +1,26 @@
+[
+	{
+		"type" : "WT_BUTTON",
+		"name" : "resume",
+		"groupName" : "pause",
+		"x" : 0,
+		"y" : 350,
+		"label" : "Resume"
+	},
+	{
+		"type" : "WT_BUTTON",
+		"name" : "options",
+		"groupName" : "pause",
+		"x" : 0,
+		"y" : 425,
+		"label" : "Options"
+	},
+	{
+		"type" : "WT_BUTTON",
+		"name" : "quit",
+		"groupName" : "pause",
+		"x" : 0,
+		"y" : 500,
+		"label" : "Quit"
+	}
+]
