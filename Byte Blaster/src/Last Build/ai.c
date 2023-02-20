@@ -1,9 +1,4 @@
-#include "../common.h"
-
-#include "../game/map.h"
-#include "../game/quadtree.h"
-#include "../system/util.h"
-#include "ai.h"
+#include "header.h"
 
 extern Stage stage;
 

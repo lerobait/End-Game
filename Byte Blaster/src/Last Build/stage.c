@@ -1,23 +1,4 @@
-#include "../common.h"
-
-#include "../entities/drone.h"
-#include "../entities/player.h"
-#include "../game/bullets.h"
-#include "../game/effects.h"
-#include "../game/entities.h"
-#include "../game/entityFactory.h"
-#include "../game/hud.h"
-#include "../game/map.h"
-#include "../game/options.h"
-#include "../game/quadtree.h"
-#include "../game/title.h"
-#include "../json/cJSON.h"
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "../system/text.h"
-#include "../system/util.h"
-#include "../system/widgets.h"
-#include "stage.h"
+#include "header.h"
 
 #define CAMERA_MID_X	   36
 #define CAMERA_MID_Y	   40

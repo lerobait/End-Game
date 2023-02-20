@@ -1,10 +1,4 @@
-#include "../common.h"
-
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "../system/text.h"
-#include "../system/util.h"
-#include "hud.h"
+#include "header.h"
 
 extern App	 app;
 extern Stage stage;

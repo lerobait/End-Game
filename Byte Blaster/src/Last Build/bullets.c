@@ -1,12 +1,4 @@
-#include "../common.h"
-
-#include "../game/effects.h"
-#include "../game/map.h"
-#include "../game/quadtree.h"
-#include "../system/draw.h"
-#include "../system/sound.h"
-#include "../system/util.h"
-#include "bullets.h"
+#include "header.h"
 
 extern App	 app;
 extern Stage stage;

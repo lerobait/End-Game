@@ -1,13 +1,4 @@
-#include "../common.h"
-
-#include "../game/options.h"
-#include "../game/stage.h"
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "../system/sound.h"
-#include "../system/text.h"
-#include "../system/widgets.h"
-#include "title.h"
+#include "header.h"
 
 #define NUM_RUN_TEXTURES 6
 #define ANIM_TIME		 6

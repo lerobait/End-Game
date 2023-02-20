@@ -1,7 +1,4 @@
-#include "../common.h"
-
-#include "../system/text.h"
-#include "draw.h"
+#include "header.h"
 
 extern App app;
 

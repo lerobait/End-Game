@@ -1,13 +1,4 @@
-#include <SDL2/SDL_mixer.h>
-
-#include "../common.h"
-
-#include "../game/game.h"
-#include "../system/draw.h"
-#include "../system/sound.h"
-#include "../system/text.h"
-#include "../system/widgets.h"
-#include "options.h"
+#include "header.h"
 
 extern App	app;
 extern Game game;

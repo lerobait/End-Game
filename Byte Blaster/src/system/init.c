@@ -1,15 +1,4 @@
-#include <SDL2/SDL_image.h>
-#include <SDL2/SDL_mixer.h>
-#include <SDL2/SDL_ttf.h>
-
-#include "../common.h"
-
-#include "../game/entityFactory.h"
-#include "../system/atlas.h"
-#include "../system/sound.h"
-#include "../system/text.h"
-#include "../system/textures.h"
-#include "init.h"
+#include "header.h"
 
 extern App app;
 

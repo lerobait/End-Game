@@ -1,10 +1,4 @@
-#include "common.h"
-
-#include "game/stage.h"
-#include "main.h"
-#include "system/draw.h"
-#include "system/init.h"
-#include "system/input.h"
+#include "header.h"
 
 App	  app;
 Stage stage;
