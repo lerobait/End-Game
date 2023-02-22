@@ -1,0 +1,490 @@
+[
+	{
+		"filename" : "gfx/title/gunner.png",
+		"x" : 0,
+		"y" : 0,
+		"w" : 880,
+		"h" : 197,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/title/sdl2.png",
+		"x" : 0,
+		"y" : 198,
+		"w" : 554,
+		"h" : 197,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/effects/explosion.png",
+		"x" : 881,
+		"y" : 0,
+		"w" : 110,
+		"h" : 110,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/redDoor.png",
+		"x" : 992,
+		"y" : 0,
+		"w" : 32,
+		"h" : 96,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/weakDoor.png",
+		"x" : 706,
+		"y" : 198,
+		"w" : 32,
+		"h" : 96,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/normalDoor.png",
+		"x" : 739,
+		"y" : 198,
+		"w" : 32,
+		"h" : 96,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/greenDoor.png",
+		"x" : 772,
+		"y" : 198,
+		"w" : 32,
+		"h" : 96,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/blueDoor.png",
+		"x" : 805,
+		"y" : 198,
+		"w" : 32,
+		"h" : 96,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerAimUpRight04.png",
+		"x" : 881,
+		"y" : 111,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerAimUpRight05.png",
+		"x" : 838,
+		"y" : 198,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerRun06.png",
+		"x" : 910,
+		"y" : 196,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerAimUpRight03.png",
+		"x" : 0,
+		"y" : 396,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerRun01.png",
+		"x" : 69,
+		"y" : 395,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerRun02.png",
+		"x" : 146,
+		"y" : 394,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/greenSoldierStand.png",
+		"x" : 224,
+		"y" : 393,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerAimUp.png",
+		"x" : 292,
+		"y" : 396,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerAimUpRight02.png",
+		"x" : 371,
+		"y" : 396,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerRun04.png",
+		"x" : 434,
+		"y" : 398,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerStand.png",
+		"x" : 510,
+		"y" : 400,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerRun03.png",
+		"x" : 584,
+		"y" : 395,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerAimUpRight06.png",
+		"x" : 657,
+		"y" : 396,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerJump.png",
+		"x" : 737,
+		"y" : 397,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerAimUpRight01.png",
+		"x" : 803,
+		"y" : 396,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/blueSoldierStand.png",
+		"x" : 224,
+		"y" : 393,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerRun05.png",
+		"x" : 949,
+		"y" : 396,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/gunnerDuck.png",
+		"x" : 0,
+		"y" : 483,
+		"w" : 72,
+		"h" : 80,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/greyOilDrum.png",
+		"x" : 954,
+		"y" : 111,
+		"w" : 48,
+		"h" : 60,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/greenOilDrum.png",
+		"x" : 146,
+		"y" : 477,
+		"w" : 48,
+		"h" : 60,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/blueOilDrum.png",
+		"x" : 195,
+		"y" : 477,
+		"w" : 48,
+		"h" : 60,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/stage/failed.png",
+		"x" : 244,
+		"y" : 477,
+		"w" : 230,
+		"h" : 57,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/stage/complete.png",
+		"x" : 475,
+		"y" : 477,
+		"w" : 351,
+		"h" : 56,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/stage/start.png",
+		"x" : 0,
+		"y" : 558,
+		"w" : 204,
+		"h" : 56,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/stage/mission.png",
+		"x" : 205,
+		"y" : 558,
+		"w" : 282,
+		"h" : 55,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/tiles/1.png",
+		"x" : 706,
+		"y" : 295,
+		"w" : 48,
+		"h" : 48,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/tiles/2.png",
+		"x" : 755,
+		"y" : 295,
+		"w" : 48,
+		"h" : 48,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/tiles/3.png",
+		"x" : 804,
+		"y" : 295,
+		"w" : 48,
+		"h" : 48,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/redKeycard.png",
+		"x" : 853,
+		"y" : 295,
+		"w" : 48,
+		"h" : 48,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/redTarget.png",
+		"x" : 902,
+		"y" : 295,
+		"w" : 48,
+		"h" : 48,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/blueTarget.png",
+		"x" : 951,
+		"y" : 295,
+		"w" : 48,
+		"h" : 48,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/blueKeycard.png",
+		"x" : 827,
+		"y" : 477,
+		"w" : 48,
+		"h" : 48,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/greenKeycard.png",
+		"x" : 876,
+		"y" : 477,
+		"w" : 48,
+		"h" : 48,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/redDrone.png",
+		"x" : 555,
+		"y" : 349,
+		"w" : 48,
+		"h" : 39,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/greyDrone.png",
+		"x" : 604,
+		"y" : 349,
+		"w" : 48,
+		"h" : 39,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/playerLifeBlockWarning.png",
+		"x" : 653,
+		"y" : 349,
+		"w" : 64,
+		"h" : 32,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/playerLifeBlockFull.png",
+		"x" : 718,
+		"y" : 349,
+		"w" : 64,
+		"h" : 32,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/playerLifeBlockEmpty.png",
+		"x" : 783,
+		"y" : 349,
+		"w" : 64,
+		"h" : 32,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/spreadGun.png",
+		"x" : 984,
+		"y" : 198,
+		"w" : 31,
+		"h" : 31,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/health.png",
+		"x" : 984,
+		"y" : 230,
+		"w" : 31,
+		"h" : 31,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/gunnerIcon.png",
+		"x" : 848,
+		"y" : 349,
+		"w" : 30,
+		"h" : 30,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/oilDrumIcon.png",
+		"x" : 1000,
+		"y" : 295,
+		"w" : 24,
+		"h" : 30,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/arrow.png",
+		"x" : 879,
+		"y" : 349,
+		"w" : 27,
+		"h" : 27,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/keycardRed.png",
+		"x" : 907,
+		"y" : 349,
+		"w" : 48,
+		"h" : 24,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/keycardEmpty.png",
+		"x" : 956,
+		"y" : 349,
+		"w" : 48,
+		"h" : 24,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/keycardGreen.png",
+		"x" : 925,
+		"y" : 477,
+		"w" : 48,
+		"h" : 24,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/hud/keycardBlue.png",
+		"x" : 974,
+		"y" : 477,
+		"w" : 48,
+		"h" : 24,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/effects/debris2.png",
+		"x" : 1003,
+		"y" : 111,
+		"w" : 16,
+		"h" : 16,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/effects/debris4.png",
+		"x" : 1003,
+		"y" : 128,
+		"w" : 13,
+		"h" : 14,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/effects/debris3.png",
+		"x" : 1003,
+		"y" : 143,
+		"w" : 14,
+		"h" : 14,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/playerBullet.png",
+		"x" : 954,
+		"y" : 172,
+		"w" : 14,
+		"h" : 14,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/sprites/enemyBullet.png",
+		"x" : 969,
+		"y" : 172,
+		"w" : 14,
+		"h" : 14,
+		"rotated" : 0
+	},
+	{
+		"filename" : "gfx/effects/debris1.png",
+		"x" : 992,
+		"y" : 97,
+		"w" : 13,
+		"h" : 12,
+		"rotated" : 0
+	}
+]

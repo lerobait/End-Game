@@ -43,7 +43,6 @@ void cJSON_InitHooks(cJSON_Hooks *hooks)
 	cJSON_free = (hooks->free_fn) ? hooks->free_fn : free;
 }
 
-/* Internal constructor. */
 static cJSON *cJSON_New_Item(void)
 {
 	cJSON *node = (cJSON *)cJSON_malloc(sizeof(cJSON));
@@ -51,7 +50,6 @@ static cJSON *cJSON_New_Item(void)
 	return node;
 }
 
-/* Delete a cJSON structure. */
 void cJSON_Delete(cJSON *c)
 {
 	cJSON *next;

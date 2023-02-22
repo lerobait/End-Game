@@ -1,0 +1,63 @@
+EnterCommand.ttf
+	- By jeti
+	- https://www.dafont.com/enter-command.font
+
+The End
+	- Created by Robert Friedrich.
+	- http://www.amazon.com/Robert-Friedrich/e/B00F6N9E8A
+
+dova_b8d_toys_master.mp3
+	- By ISAo
+	- https://opengameart.org/users/isao
+
+35681__jobro__laser4.ogg
+	- Laser4.wav, by jobro
+	- https://freesound.org/people/jobro/sounds/35681
+
+47252__deleted-user-364925__bad-explosion.ogg
+	- bad explosion, by deleted_user_364925
+	- https://freesound.org/people/deleted_user_364925/sounds/47252
+
+76969__michel88__paino.ogg
+	- paino.wav, by Michel88
+	- https://freesound.org/people/Michel88/sounds/76969
+
+148309__keemocore__robot-step-short-medium-heavy.ogg
+	- robot step short medium-heavy.wav, by keemocore
+	- https://freesound.org/people/keemocore/sounds/148309
+
+170959__timgormly__metal-clang.ogg
+	- Metal Clang.aif, by timgormly
+	- https://freesound.org/people/timgormly/sounds/170959
+
+263133__pan14__tone-beep.ogg
+	- tone beep.wav, by pan14
+	- https://freesound.org/people/pan14/sounds/263133
+
+264762__farpro__guiclick.ogg
+	- guiclick.ogg, by farpro
+	- https://freesound.org/people/farpro/sounds/264762
+
+321102__nsstudios__laser1.ogg
+	- laser1.wav, by nsstudios
+	- https://freesound.org/people/nsstudios/sounds/321102
+
+470587__silverillusionist__heavy-impact.ogg
+	- Heavy Impact, by SilverIllusionist
+	- https://freesound.org/people/SilverIllusionist/sounds/470587
+
+523089__magnuswaker__explosion-1.ogg
+	- Explosion 1, by magnuswaker
+	- https://freesound.org/people/magnuswaker/sounds/523089
+
+536786__egomassive__screamm.ogg
+	- ScreamM.ogg, by egomassive
+	- https://freesound.org/people/egomassive/sounds/536786
+
+572936__bloodpixelhero__error.ogg
+	- Error, by BloodPixelHero
+	- https://freesound.org/people/BloodPixelHero/sounds/572936
+
+577965__colorscrimsontears__rpgpowerup.ogg
+	- rpgPowerup.wav, by colorsCrimsonTears
+	- https://freesound.org/people/colorsCrimsonTears/sounds/577965

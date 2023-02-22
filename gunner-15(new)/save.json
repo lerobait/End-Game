@@ -1,0 +1,16 @@
+{
+	"controls":	{
+		"keyboard":	{
+			"left":	4,
+			"right":	7,
+			"up":	26,
+			"down":	22,
+			"jump":	44,
+			"fire":	8
+		}
+	},
+	"volumes":	{
+		"sound":	12,
+		"music":	5
+	}
+}
