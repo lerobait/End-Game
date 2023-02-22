@@ -125,21 +125,21 @@ static void handleMovement(Entity *self, Gunner *g)
 
 	g->ducking = 0;
 
-	if (isControl(CONTROL_LEFT))
+	if (app.keyboard[SDL_SCANCODE_A])
 	{
 		self->dx = -RUN_SPEED;
 
 		self->facing = FACING_LEFT;
 	}
 
-	if (isControl(CONTROL_RIGHT))
+	if (app.keyboard[SDL_SCANCODE_D])
 	{
 		self->dx = RUN_SPEED;
 
 		self->facing = FACING_RIGHT;
 	}
 
-	if (isControl(CONTROL_JUMP) && self->onGround)
+	if (app.keyboard[SDL_SCANCODE_I] && self->onGround)
 	{
 		self->dy = JUMP_SPEED;
 
@@ -150,7 +150,7 @@ static void handleMovement(Entity *self, Gunner *g)
 	{
 		self->texture = jumpTexture;
 	}
-	else if (isControl(CONTROL_DOWN))
+	else if (app.keyboard[SDL_SCANCODE_S])
 	{
 		self->texture = duckTexture;
 
@@ -162,7 +162,7 @@ static void handleMovement(Entity *self, Gunner *g)
 	}
 	else
 	{
-		if (isControl(CONTROL_UP))
+		if (app.keyboard[SDL_SCANCODE_W])
 		{
 			g->aimingUp = 1;
 		}
@@ -177,11 +177,15 @@ static void handleMovement(Entity *self, Gunner *g)
 
 				g->animTimer = ANIM_TIME;
 			}
-			
-		  
-			self->texture = runTextures[g->frame];
-			
-			
+
+			if (g->aimingUp)
+			{
+				self->texture = aimUpRightTextures[g->frame];
+			}
+			else
+			{
+				self->texture = runTextures[g->frame];
+			}
 		}
 		else
 		{
@@ -203,7 +207,7 @@ static void handleShoot(Entity *self, Gunner *g)
 {
 	g->reload = MAX(g->reload - app.deltaTime, 0);
 
-	if (isControl(CONTROL_FIRE) && g->reload == 0)
+	if (app.keyboard[SDL_SCANCODE_J] && g->reload == 0)
 	{
 		switch (g->weaponType)
 		{
@@ -376,35 +380,6 @@ static void takeDamage(Entity *self, int amount, Entity *attacker)
 			playSound(SND_PLAYER_HURT, CH_ANY);
 		}
 	}
-}
-
-static int isControl(int type)
-{
-	int key;
-
-	if (type == CONTROL_LEFT)
-	{
-		return 1;
-	}
-
-	if (type == CONTROL_RIGHT)
-	{
-		return 1;
-	}
-
-	if (type == CONTROL_UP)
-	{
-		return 1;
-	}
-
-	if (type == CONTROL_DOWN)
-	{
-		return 1;
-	}
-
-	key = game.keyControls[type];
-
-	return ((key != 0 && app.keyboard[key]));
 }
 
 int resetPlayer(void)

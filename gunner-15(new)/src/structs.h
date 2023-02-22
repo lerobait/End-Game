@@ -208,20 +208,6 @@ typedef struct
 
 typedef struct
 {
-	int x;
-	int y;
-	int keyboard;
-} ControlWidget;
-
-typedef struct
-{
-	int keyControls[CONTROL_MAX];
-	int soundVolume;
-	int musicVolume;
-} Game;
-
-typedef struct
-{
 	Entity	  entityHead, *entityTail;
 	Bullet	  bulletHead, *bulletTail;
 	Effect	  effectHead, *effectTail;
@@ -247,9 +233,9 @@ typedef struct
 	int			  keyboard[MAX_KEYBOARD_KEYS];
 	char		  inputText[MAX_INPUT_LENGTH];
 	int			  lastKeyPressed;
+	int			  lastButtonPressed;
 	double		  deltaTime;
 	double		  fontScale;
-	Widget	   *activeWidget;
 	struct
 	{
 		int fps;

@@ -114,27 +114,6 @@ void doWidgets(char *groupName)
 
 		if (app.keyboard[SDL_SCANCODE_SPACE] || app.keyboard[SDL_SCANCODE_RETURN])
 		{
-			app.keyboard[SDL_SCANCODE_SPACE] = app.keyboard[SDL_SCANCODE_RETURN] = 0;
-
-			if (app.activeWidget->type == WT_INPUT)
-			{
-				cursorBlink = 0;
-
-				handleInputWidget = 1;
-
-				memset(app.inputText, 0, sizeof(app.inputText));
-			}
-			else if (app.activeWidget->type == WT_CONTROL)
-			{
-				app.lastKeyPressed = -1;
-
-				handleControlWidget = 1;
-			}
-			else if (app.activeWidget->action != NULL)
-			{
-				app.activeWidget->action();
-			}
-
 			playSound(SND_GUI, 0);
 		}
 	}
@@ -259,30 +238,6 @@ static void doControlWidget(void)
 
 	if (app.lastKeyPressed != -1)
 	{
-		cw = (ControlWidget *)app.activeWidget->data;
-
-		if (app.lastKeyPressed == SDL_SCANCODE_BACKSPACE)
-		{
-			cw->keyboard = 0;
-
-		}
-		else if (app.lastKeyPressed != SDL_SCANCODE_ESCAPE)
-		{
-			if (app.lastKeyPressed != -1)
-			{
-				cw->keyboard = app.lastKeyPressed;
-
-				app.keyboard[app.lastKeyPressed] = 0;
-			}
-
-			if (app.activeWidget->action != NULL)
-			{
-				app.activeWidget->action();
-			}
-		}
-
-		handleControlWidget = 0;
-
 		playSound(SND_GUI, 0);
 	}
 }
@@ -428,49 +383,6 @@ static void drawInputWidget(Widget *w)
 		calcTextDimensions(i->text, &width, &height);
 
 		drawRect(i->x + width + 4, i->y + 14, 32, 32, 0, 255, 0, 255);
-	}
-}
-
-static void drawControlWidget(Widget *w)
-{
-	SDL_Color	   c;
-	ControlWidget *cw;
-	char		   text[32];
-
-	cw = (ControlWidget *)w->data;
-
-	if (w == app.activeWidget)
-	{
-		c.g = 255;
-		c.r = c.b = 0;
-	}
-	else
-	{
-		c.r = c.g = c.b = 255;
-	}
-
-	drawText(w->label, w->x, w->y, c.r, c.g, c.b, TEXT_ALIGN_LEFT, 0);
-
-	if (handleControlWidget && app.activeWidget == w)
-	{
-		drawText("...", cw->x, cw->y, c.r, c.g, c.b, TEXT_ALIGN_LEFT, 0);
-	}
-	else
-	{
-		if (cw->keyboard != 0)
-		{
-			sprintf(text, "%s", SDL_GetScancodeName(cw->keyboard));
-		}
-		else if (cw->keyboard != 0)
-		{
-			sprintf(text, "%s", SDL_GetScancodeName(cw->keyboard));
-		}
-		else
-		{
-			sprintf(text, "N/A");
-		}
-
-		drawText(text, cw->x, cw->y, c.r, c.g, c.b, TEXT_ALIGN_LEFT, 0);
 	}
 }
 

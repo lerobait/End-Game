@@ -137,6 +137,15 @@ static void controls(void)
 	app.activeWidget = getWidget("left", "controls");
 }
 
+static void deadzone(void)
+{
+	SliderWidget *sw;
+
+	sw = (SliderWidget *)app.activeWidget->data;
+
+	game.deadzone = DEADZONE_MAX * (sw->value * 0.01);
+}
+
 static void back(void)
 {
 	saveGame();
@@ -151,34 +160,10 @@ static void backToOptions(void)
 	app.activeWidget = getWidget("controls", "options");
 }
 
-static void updateControls(void)
-{
-	ControlWidget *w;
-
-	w = (ControlWidget *)getWidget("left", "controls")->data;
-	game.keyControls[CONTROL_LEFT] = w->keyboard;
-
-	w = (ControlWidget *)getWidget("right", "controls")->data;
-	game.keyControls[CONTROL_RIGHT] = w->keyboard;
-
-	w = (ControlWidget *)getWidget("up", "controls")->data;
-	game.keyControls[CONTROL_UP] = w->keyboard;
-
-	w = (ControlWidget *)getWidget("down", "controls")->data;
-	game.keyControls[CONTROL_DOWN] = w->keyboard;
-
-	w = (ControlWidget *)getWidget("jump", "controls")->data;
-	game.keyControls[CONTROL_JUMP] = w->keyboard;
-
-	w = (ControlWidget *)getWidget("fire", "controls")->data;
-	game.keyControls[CONTROL_FIRE] = w->keyboard;
-}
-
 static void setupWidgets(void)
 {
 	Widget		   *w;
 	SliderWidget	 *sw;
-	ControlWidget *cw;
 
 	w = getWidget("sound", "options");
 	w->action = sound;
@@ -204,47 +189,14 @@ static void setupWidgets(void)
 	w = getWidget("back", "options");
 	w->action = back;
 
-	w = getWidget("left", "controls");
-	w->action = updateControls;
-	cw = (ControlWidget *)w->data;
-	cw->x = w->x + 200;
-	cw->y = w->y;
-	cw->keyboard = game.keyControls[CONTROL_LEFT];
-
-	w = getWidget("right", "controls");
-	w->action = updateControls;
-	cw = (ControlWidget *)w->data;
-	cw->x = w->x + 200;
-	cw->y = w->y;
-	cw->keyboard = game.keyControls[CONTROL_RIGHT];
-
-	w = getWidget("up", "controls");
-	w->action = updateControls;
-	cw = (ControlWidget *)w->data;
-	cw->x = w->x + 200;
-	cw->y = w->y;
-	cw->keyboard = game.keyControls[CONTROL_UP];
-
-	w = getWidget("down", "controls");
-	w->action = updateControls;
-	cw = (ControlWidget *)w->data;
-	cw->x = w->x + 200;
-	cw->y = w->y;
-	cw->keyboard = game.keyControls[CONTROL_DOWN];
-
-	w = getWidget("jump", "controls");
-	w->action = updateControls;
-	cw = (ControlWidget *)w->data;
-	cw->x = w->x + 200;
-	cw->y = w->y;
-	cw->keyboard = game.keyControls[CONTROL_JUMP];
-
-	w = getWidget("fire", "controls");
-	w->action = updateControls;
-	cw = (ControlWidget *)w->data;
-	cw->x = w->x + 200;
-	cw->y = w->y;
-	cw->keyboard = game.keyControls[CONTROL_FIRE];
+	w = getWidget("deadzone", "controls");
+	w->action = deadzone;
+	sw = (SliderWidget *)w->data;
+	sw->x = w->x + 225;
+	sw->y = w->y + 16;
+	sw->w = 350;
+	sw->h = 32;
+	sw->value = ((1.0 * game.deadzone) / DEADZONE_MAX) * 100;
 
 	w = getWidget("back", "controls");
 	w->action = backToOptions;

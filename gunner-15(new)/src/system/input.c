@@ -46,6 +46,10 @@ void doInput(void)
 				doKeyUp(&event.key);
 				break;
 
+			case SDL_TEXTINPUT:
+				STRNCPY(app.inputText, event.text.text, MAX_INPUT_LENGTH);
+				break;
+
 			default:
 				break;
 		}
