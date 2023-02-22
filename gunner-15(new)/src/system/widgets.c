@@ -128,8 +128,6 @@ void doWidgets(char *groupName)
 			{
 				app.lastKeyPressed = -1;
 
-				app.lastButtonPressed = -1;
-
 				handleControlWidget = 1;
 			}
 			else if (app.activeWidget->action != NULL)

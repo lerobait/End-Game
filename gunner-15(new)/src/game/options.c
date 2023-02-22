@@ -137,15 +137,6 @@ static void controls(void)
 	app.activeWidget = getWidget("left", "controls");
 }
 
-static void deadzone(void)
-{
-	SliderWidget *sw;
-
-	sw = (SliderWidget *)app.activeWidget->data;
-
-	game.deadzone = DEADZONE_MAX * (sw->value * 0.01);
-}
-
 static void back(void)
 {
 	saveGame();
@@ -254,15 +245,6 @@ static void setupWidgets(void)
 	cw->x = w->x + 200;
 	cw->y = w->y;
 	cw->keyboard = game.keyControls[CONTROL_FIRE];
-
-	w = getWidget("deadzone", "controls");
-	w->action = deadzone;
-	sw = (SliderWidget *)w->data;
-	sw->x = w->x + 225;
-	sw->y = w->y + 16;
-	sw->w = 350;
-	sw->h = 32;
-	sw->value = ((1.0 * game.deadzone) / DEADZONE_MAX) * 100;
 
 	w = getWidget("back", "controls");
 	w->action = backToOptions;

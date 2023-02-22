@@ -48,16 +48,6 @@
 		"label" : "Fire"
 	},
 	{
-		"type" : "WT_SLIDER",
-		"name" : "deadzone",
-		"groupName" : "controls",
-		"x" : 520,
-		"y" : 650,
-		"label" : "Deadzone",
-		"step" : 10,
-		"waitOnChange" : 1
-	},
-	{
 		"type" : "WT_BUTTON",
 		"name" : "back",
 		"groupName" : "controls",
