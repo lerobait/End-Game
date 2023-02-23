@@ -1,5 +1,4 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
+#include<time.h>
 
 void initGreenSoldier(Entity *e);
+

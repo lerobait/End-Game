@@ -1,4 +1,6 @@
-#include "header.h"
+#include "../common.h"
+
+#include "input.h"
 
 extern App app;
 
@@ -17,6 +19,32 @@ static void doKeyDown(SDL_KeyboardEvent *event)
 		app.keyboard[event->keysym.scancode] = 1;
 
 		app.lastKeyPressed = event->keysym.scancode;
+	}
+}
+
+static void doButtonDown(SDL_JoyButtonEvent *event)
+{
+	if (event->state == SDL_PRESSED && event->button < MAX_JOYPAD_BUTTONS)
+	{
+		app.joypadButton[event->button] = 1;
+
+		app.lastButtonPressed = event->button;
+	}
+}
+
+static void doButtonUp(SDL_JoyButtonEvent *event)
+{
+	if (event->state == SDL_RELEASED && event->button < MAX_JOYPAD_BUTTONS)
+	{
+		app.joypadButton[event->button] = 0;
+	}
+}
+
+static void doJoyAxis(SDL_JoyAxisEvent *event)
+{
+	if (event->axis < JOYPAD_AXIS_MAX)
+	{
+		app.joypadAxis[event->axis] = event->value;
 	}
 }
 
@@ -40,8 +68,16 @@ void doInput(void)
 				doKeyUp(&event.key);
 				break;
 
-			case SDL_TEXTINPUT:
-				STRNCPY(app.inputText, event.text.text, MAX_INPUT_LENGTH);
+			case SDL_JOYBUTTONDOWN:
+				doButtonDown(&event.jbutton);
+				break;
+
+			case SDL_JOYBUTTONUP:
+				doButtonUp(&event.jbutton);
+				break;
+
+			case SDL_JOYAXISMOTION:
+				doJoyAxis(&event.jaxis);
 				break;
 
 			default:

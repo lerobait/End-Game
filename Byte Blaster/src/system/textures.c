@@ -1,4 +1,8 @@
-#include "header.h"
+#include <SDL2/SDL_image.h>
+
+#include "../common.h"
+
+#include "textures.h"
 
 extern App app;
 

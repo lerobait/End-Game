@@ -1,4 +1,18 @@
-#include "header.h"
+#include <SDL2/SDL_image.h>
+#include <SDL2/SDL_mixer.h>
+#include <SDL2/SDL_ttf.h>
+#include <time.h>
+
+#include "../common.h"
+
+#include "../game/entityFactory.h"
+#include "../game/game.h"
+#include "../system/atlas.h"
+#include "../system/sound.h"
+#include "../system/text.h"
+#include "../system/textures.h"
+#include "../system/widgets.h"
+#include "init.h"
 
 extern App app;
 
@@ -10,7 +24,7 @@ void initSDL(void)
 
 	windowFlags = 0;
 
-	if (SDL_Init(SDL_INIT_VIDEO) < 0)
+	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0)
 	{
 		printf("Couldn't initialize SDL: %s\n", SDL_GetError());
 		exit(1);
@@ -24,7 +38,7 @@ void initSDL(void)
 
 	Mix_AllocateChannels(MAX_SND_CHANNELS);
 
-	app.window = SDL_CreateWindow("SDL2 Gunner 01", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, windowFlags);
+	app.window = SDL_CreateWindow("SDL2 Gunner 15", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, windowFlags);
 
 	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "nearest");
 
@@ -41,17 +55,46 @@ void initSDL(void)
 	SDL_ShowCursor(0);
 }
 
+static void initJoypad(void)
+{
+	int i, n;
+
+	n = SDL_NumJoysticks();
+
+	SDL_LogMessage(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_INFO, "%d joysticks available", n);
+
+	for (i = 0; i < n; i++)
+	{
+		app.joypad = SDL_JoystickOpen(i);
+
+		if (app.joypad != NULL)
+		{
+			SDL_LogMessage(SDL_LOG_CATEGORY_APPLICATION, SDL_LOG_PRIORITY_INFO, "Joystick [name='%s', Axes=%d, Buttons=%d]", SDL_JoystickNameForIndex(i), SDL_JoystickNumAxes(app.joypad), SDL_JoystickNumButtons(app.joypad));
+
+			return;
+		}
+	}
+}
+
 void initGameSystem(void)
 {
+	srand(time(NULL));
+
+	initJoypad();
+
 	initFonts();
 
 	initAtlas();
+
+	initWidgets();
 
 	initSound();
 
 	initTextures();
 
 	initEntityFactory();
+
+	initGame();
 }
 
 void cleanup(void)

@@ -1,0 +1,25 @@
+{
+	"controls":	{
+		"keyboard":	{
+			"left":	4,
+			"right":	7,
+			"up":	26,
+			"down":	22,
+			"jump":	44,
+			"fire":	8
+		},
+		"joypad":	{
+			"left":	-1,
+			"right":	-1,
+			"up":	-1,
+			"down":	-1,
+			"jump":	-1,
+			"fire":	-1,
+			"deadzone":	0
+		}
+	},
+	"volumes":	{
+		"sound":	49,
+		"music":	12
+	}
+}

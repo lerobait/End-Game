@@ -1,4 +1,13 @@
-#include "header.h"
+#include "../common.h"
+
+#include "../entities/debris.h"
+#include "../game/bullets.h"
+#include "../game/effects.h"
+#include "../game/stage.h"
+#include "../system/atlas.h"
+#include "../system/draw.h"
+#include "../system/sound.h"
+#include "player.h"
 
 #define NUM_RUN_TEXTURES	  6
 #define RUN_SPEED			  7
@@ -164,15 +173,11 @@ static void handleMovement(Entity *self, Gunner *g)
 
 				g->animTimer = ANIM_TIME;
 			}
-
-			if (g->aimingUp)
-			{
-				self->texture = aimUpRightTextures[g->frame];
-			}
-			else
-			{
-				self->texture = runTextures[g->frame];
-			}
+			
+		  
+			self->texture = runTextures[g->frame];
+			
+			
 		}
 		else
 		{
@@ -217,51 +222,75 @@ static void handleShoot(Entity *self, Gunner *g)
 
 static void fireBullet(Entity *self, Gunner *g, int angle)
 {
-	Bullet *b;
-	int		baseAngle;
-
-	b = spawnBullet(self);
-	b->texture = bulletTexture;
-	b->damage = 1;
-	b->life = FPS * 2;
-
-	baseAngle = self->facing == FACING_RIGHT ? 90 : -90;
-
-	if (g->ducking)
-	{
-		b->y = self->y + self->texture->rect.h - 34;
-		b->x = self->facing == FACING_RIGHT ? self->x + self->texture->rect.w : self->x - b->texture->rect.w;
-	}
-	else if (g->aimingUp)
-	{
-		b->y = self->y - b->texture->rect.h;
-		b->dy = -BULLET_SPEED;
-
-		if (self->dx == 0)
-		{
-			b->x = self->x + (self->texture->rect.w / 2) - (b->texture->rect.w / 2);
-			b->x += self->facing == FACING_RIGHT ? 12 : -12;
-
-			baseAngle = 0;
-		}
-		else
-		{
-			b->x = self->facing == FACING_RIGHT ? self->x + self->texture->rect.w : self->x;
-			b->dx = self->facing == FACING_RIGHT ? BULLET_SPEED : -BULLET_SPEED;
-
-			baseAngle = self->facing == FACING_RIGHT ? 45 : -45;
-		}
-	}
-	else
-	{
-		b->x = self->facing == FACING_RIGHT ? self->x + self->texture->rect.w : self->x;
-		b->y = self->y + 19;
-	}
-
-	angle += baseAngle;
-
-	b->dx = sin(TO_RAIDANS(angle)) * BULLET_SPEED;
-	b->dy = -cos(TO_RAIDANS(angle)) * BULLET_SPEED;
+    Bullet *b;
+    int baseAngle;
+    
+    b = spawnBullet(self);
+    b->texture = bulletTexture;
+    b->damage = 1;
+    b->life = FPS * 2;
+    
+    baseAngle = self->facing == FACING_RIGHT ? 90 : -90;
+    
+    if (g->ducking)
+    {
+        b->y = self->y + self->texture->rect.h - 34;
+        b->x = self->facing == FACING_RIGHT ? self->x + self->texture->rect.w : self->x - b->texture->rect.w;
+    }
+    else if (g->aimingUp)
+    {
+        b->y = self->y - b->texture->rect.h;
+        b->dy = -BULLET_SPEED;
+        
+        if (self->dx == 0)
+        {
+            b->x = self->x + (self->texture->rect.w / 2) - (b->texture->rect.w / 2);
+            b->x += self->facing == FACING_RIGHT ? -10 : 10;
+            
+            baseAngle = 0;
+        }
+        else if (isControl(CONTROL_LEFT) && self->facing == FACING_LEFT)
+        {
+            b->x = self->x - b->texture->rect.w;
+            b->dx = -BULLET_SPEED;
+            
+            baseAngle = -90;
+        }
+        else if (isControl(CONTROL_RIGHT) && self->facing == FACING_RIGHT)
+        {
+            b->x = self->x + self->texture->rect.w;
+            b->dx = BULLET_SPEED;
+            
+            baseAngle = 90;
+        }
+        else
+        {
+            b->x = self->facing == FACING_RIGHT ? self->x + self->texture->rect.w : self->x;
+            
+            baseAngle = self->facing == FACING_RIGHT ? 45 : -45;
+        }
+    }
+    else
+    {
+        b->x = self->facing == FACING_RIGHT ? self->x + self->texture->rect.w : self->x;
+        b->y = self->y + 10;
+        
+        if (isControl(CONTROL_LEFT) && self->facing == FACING_LEFT)
+        {
+            b->dx = -BULLET_SPEED;
+            baseAngle = -90;
+        }
+        else if (isControl(CONTROL_RIGHT) && self->facing == FACING_RIGHT)
+        {
+            b->dx = BULLET_SPEED;
+            baseAngle = 90;
+        }
+    }
+    
+    angle += baseAngle;
+    
+    b->dx = sin(TO_RAIDANS(angle)) * BULLET_SPEED;
+    b->dy = -cos(TO_RAIDANS(angle)) * BULLET_SPEED;
 }
 
 static void updateHitbox(Entity *self, Gunner *g)

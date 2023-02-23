@@ -1,4 +1,9 @@
-#include "header.h"
+#include "../common.h"
+
+#include "../system/atlas.h"
+#include "../system/draw.h"
+#include "../system/sound.h"
+#include "keycards.h"
 
 extern Stage stage;
 

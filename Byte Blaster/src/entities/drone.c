@@ -1,4 +1,16 @@
-#include "header.h"
+#include "../common.h"
+
+#include "../entities/debris.h"
+#include "../entities/powerup.h"
+#include "../game/ai.h"
+#include "../game/bullets.h"
+#include "../game/effects.h"
+#include "../game/entityFactory.h"
+#include "../system/atlas.h"
+#include "../system/draw.h"
+#include "../system/sound.h"
+#include "../system/util.h"
+#include "drone.h"
 
 #define RELOAD_SPEED 14
 #define BULLET_SPEED 12
@@ -96,13 +108,6 @@ static void tick(Entity *self)
 		}
 	}
 
-	if (d->engineTimer <= 0)
-	{
-		addDroneEngineEffect(self->x + (self->texture->rect.w / 2), self->y + self->texture->rect.h, self->dy);
-
-		d->engineTimer = 1;
-	}
-
 	if (d->despawnTimer <= 0)
 	{
 		x = self->x - stage.camera.x;
@@ -184,7 +189,6 @@ static void draw(Entity *self)
 static void takeDamage(Entity *self, int amount, Entity *attacker)
 {
 	Drone  *d;
-	Entity *e;
 	int		i, x, y;
 
 	if (attacker == stage.player)
@@ -217,23 +221,7 @@ static void takeDamage(Entity *self, int amount, Entity *attacker)
 				addDebris(x, y);
 			}
 
-			e = spawnEntity();
-			e->x = self->x + (self->texture->rect.w / 2);
-			e->y = self->y + (self->texture->rect.h / 2);
-			e->dx = (1.0 * (rand() % 400 - rand() % 400)) * 0.01;
-			e->dy = (1000 + (rand() % 700)) * -0.01;
-
-			if (d->type == DRONE_GREY)
-			{
-				initHealth(e);
-			}
-			else
-			{
-				initSpreadGun(e);
-			}
-
-			e->flags |= EF_BOUNCES;
-
+			
 			self->dead = 1;
 
 			playSound(SND_EXPLOSION, CH_ANY);

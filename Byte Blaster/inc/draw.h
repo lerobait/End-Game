@@ -1,7 +1,9 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
 
+#include <SDL2/SDL.h>
+#include <SDL_image.h>
+#include <stdio.h>
+
+#include <stdlib.h>
 void drawOutlineRect(int x, int y, int w, int h, int r, int g, int b, int a);
 void drawRect(int x, int y, int w, int h, int r, int g, int b, int a);
 void blitRotated(AtlasImage *atlasImage, int x, int y, float angle);

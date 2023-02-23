@@ -1,6 +1,13 @@
-#include "header.h"
+#include "common.h"
+
+#include "game/title.h"
+#include "main.h"
+#include "system/draw.h"
+#include "system/init.h"
+#include "system/input.h"
 
 App	  app;
+Game  game;
 Stage stage;
 
 static void logic(void);
@@ -17,11 +24,11 @@ int main(int argc, char *argv[])
 
 	initSDL();
 
+	atexit(cleanup);
+
 	initGameSystem();
 
-	initStage();
-
-	atexit(cleanup);
+	initTitle();
 
 	nextFPS = SDL_GetTicks() + 1000;
 

@@ -1,4 +1,12 @@
-#include "header.h"
+#include <ctype.h>
+#include <float.h>
+#include <limits.h>
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "cJSON.h"
 
 static const char *ep;
 
@@ -33,7 +41,7 @@ static char *cJSON_strdup(const char *str)
 void cJSON_InitHooks(cJSON_Hooks *hooks)
 {
 	if (!hooks)
-	{ /* Reset hooks */
+	{
 		cJSON_malloc = malloc;
 		cJSON_free = free;
 		return;
@@ -63,6 +71,7 @@ void cJSON_Delete(cJSON *c)
 		c = next;
 	}
 }
+
 static const char *parse_number(cJSON *item, const char *num)
 {
 	double n = 0, sign = 1, scale = 0;
@@ -78,14 +87,14 @@ static const char *parse_number(cJSON *item, const char *num)
 		num++;
 		do n = (n * 10.0) + (*num++ - '0'), scale--;
 		while (*num >= '0' && *num <= '9');
-	} 
+	}
 	if (*num == 'e' || *num == 'E')
-	{ 
+	{
 		num++;
 		if (*num == '+')
 			num++;
 		else if (*num == '-')
-			signsubscale = -1, num++;												
+			signsubscale = -1, num++;													
 		while (*num >= '0' && *num <= '9') subscale = (subscale * 10) + (*num++ - '0'); 
 	}
 
@@ -242,11 +251,10 @@ static const char		  *parse_string(cJSON *item, const char *str)
 		ep = str;
 		return 0;
 	}
-
 	while (*ptr != '\"' && *ptr && ++len)
 		if (*ptr++ == '\\') ptr++; 
 
-	out = (char *)cJSON_malloc(len + 1); 
+	out = (char *)cJSON_malloc(len + 1);
 	if (!out) return 0;
 
 	ptr = str + 1;
@@ -283,7 +291,7 @@ static const char		  *parse_string(cJSON *item, const char *str)
 
 					if (uc >= 0xD800 && uc <= 0xDBFF)
 					{												
-						if (ptr[1] != '\\' || ptr[2] != 'u') break; 
+						if (ptr[1] != '\\' || ptr[2] != 'u') break;
 						uc2 = parse_hex4(ptr + 3);
 						ptr += 6;
 						if (uc2 < 0xDC00 || uc2 > 0xDFFF) break; 
@@ -613,13 +621,12 @@ static const char *parse_array(cJSON *item, const char *value)
 		ep = value;
 		return 0;
 	}
-
 	item->type = cJSON_Array;
 	value = skip(value + 1);
 	if (*value == ']') return value + 1; 
 
 	item->child = child = cJSON_New_Item();
-	if (!item->child) return 0;					   
+	if (!item->child) return 0;					 
 	value = skip(parse_value(child, skip(value))); 
 	if (!value) return 0;
 
@@ -634,11 +641,10 @@ static const char *parse_array(cJSON *item, const char *value)
 		if (!value) return 0; 
 	}
 
-	if (*value == ']') return value + 1; 
+	if (*value == ']') return value + 1;
 	ep = value;
 	return 0; 
 }
-
 static char *print_array(cJSON *item, int depth, int fmt, printbuffer *p)
 {
 	char **entries;
@@ -649,7 +655,6 @@ static char *print_array(cJSON *item, int depth, int fmt, printbuffer *p)
 	size_t tmplen = 0;
 
 	while (child) numentries++, child = child->next;
-
 	if (!numentries)
 	{
 		if (p)
@@ -706,6 +711,7 @@ static char *print_array(cJSON *item, int depth, int fmt, printbuffer *p)
 				fail = 1;
 			child = child->next;
 		}
+
 		if (!fail) out = (char *)cJSON_malloc(len);
 		if (!out) fail = 1;
 
@@ -762,7 +768,7 @@ static const char *parse_object(cJSON *item, const char *value)
 	{
 		ep = value;
 		return 0;
-	}												  
+	}												   
 	value = skip(parse_value(child, skip(value + 1))); 
 	if (!value) return 0;
 
@@ -786,7 +792,7 @@ static const char *parse_object(cJSON *item, const char *value)
 		if (!value) return 0;
 	}
 
-	if (*value == '}') return value + 1; 
+	if (*value == '}') return value + 1;
 	ep = value;
 	return 0; 
 }
@@ -1259,7 +1265,7 @@ cJSON *cJSON_Duplicate(cJSON *item, int recurse)
 	cptr = item->child;
 	while (cptr)
 	{
-		newchild = cJSON_Duplicate(cptr, 1);
+		newchild = cJSON_Duplicate(cptr, 1); 
 		if (!newchild)
 		{
 			cJSON_Delete(newitem);
@@ -1299,7 +1305,7 @@ void cJSON_Minify(char *json)
 		{
 			while (*json && !(*json == '*' && json[1] == '/')) json++;
 			json += 2;
-		}
+		} 
 		else if (*json == '\"')
 		{
 			*into++ = *json++;
@@ -1311,7 +1317,7 @@ void cJSON_Minify(char *json)
 			*into++ = *json++;
 		} 
 		else
-			*into++ = *json++; 
+			*into++ = *json++;
 	}
 	*into = 0; 
 }

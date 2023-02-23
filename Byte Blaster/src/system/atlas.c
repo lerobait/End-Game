@@ -1,4 +1,10 @@
-#include "header.h"
+#include <SDL2/SDL_image.h>
+
+#include "../common.h"
+
+#include "../json/cJSON.h"
+#include "../system/util.h"
+#include "atlas.h"
 
 #define NUM_ATLAS_BUCKETS 16
 
