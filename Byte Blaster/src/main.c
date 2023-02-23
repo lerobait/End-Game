@@ -1,10 +1,4 @@
-#include "common.h"
-
-#include "game/title.h"
-#include "main.h"
-#include "system/draw.h"
-#include "system/init.h"
-#include "system/input.h"
+#include "header.h"
 
 App	  app;
 Game  game;

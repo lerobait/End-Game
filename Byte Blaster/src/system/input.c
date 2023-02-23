@@ -1,6 +1,4 @@
-#include "../common.h"
-
-#include "input.h"
+#include "header.h"
 
 extern App app;
 

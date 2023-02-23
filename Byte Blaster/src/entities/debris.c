@@ -1,10 +1,4 @@
-#include "../common.h"
-
-#include "../game/effects.h"
-#include "../game/entityFactory.h"
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "debris.h"
+#include "header.h"
 
 #define NUM_TEXTURES 4
 

@@ -1,8 +1,4 @@
-#include <SDL2/SDL_mixer.h>
-
-#include "../common.h"
-
-#include "sound.h"
+#include "header.h"
 
 static void loadSounds(void);
 

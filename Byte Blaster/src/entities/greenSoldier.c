@@ -1,15 +1,4 @@
-#include "../common.h"
-
-#include "../entities/debris.h"
-#include "../entities/powerup.h"
-#include "../game/entityFactory.h"
-#include "../game/ai.h"
-#include "../game/bullets.h"
-#include "../game/effects.h"
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "../system/sound.h"
-#include "greenSoldier.h"
+#include "header.h"
 
 #define RELOAD_SPEED 14
 #define BULLET_SPEED 12

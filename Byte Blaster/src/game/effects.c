@@ -1,8 +1,4 @@
-#include "../common.h"
-
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "effects.h"
+#include "header.h"
 
 extern App	 app;
 extern Stage stage;

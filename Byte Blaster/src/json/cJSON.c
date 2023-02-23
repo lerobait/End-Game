@@ -1,12 +1,4 @@
-#include <ctype.h>
-#include <float.h>
-#include <limits.h>
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#include "cJSON.h"
+#include "header.h"
 
 static const char *ep;
 

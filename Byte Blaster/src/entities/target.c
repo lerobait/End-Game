@@ -1,12 +1,4 @@
-/*
- * Copyright (C) 2021-2022 Parallel Realities. All rights reserved.
- */
-
-#include "../common.h"
-
-#include "../system/atlas.h"
-#include "../system/draw.h"
-#include "target.h"
+#include "header.h"
 
 #define BOUNCE_HEIGHT (-MAX_FALL_SPEED * 2)
 

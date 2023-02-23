@@ -1,11 +1,4 @@
-#include "../common.h"
-
-#include "../json/cJSON.h"
-#include "../system/draw.h"
-#include "../system/sound.h"
-#include "../system/text.h"
-#include "../system/util.h"
-#include "widgets.h"
+#include "header.h"
 
 extern App app;
 

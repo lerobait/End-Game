@@ -1,7 +1,4 @@
-#include "../common.h"
-
-#include "../system/util.h"
-#include "quadtree.h"
+#include "header.h"
 
 #define MAX_DEPTH			5
 #define QT_INITIAL_CAPACITY 8

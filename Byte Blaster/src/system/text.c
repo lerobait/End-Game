@@ -1,9 +1,4 @@
-#include <SDL2/SDL_ttf.h>
-
-#include "../common.h"
-
-#include "../system/textures.h"
-#include "text.h"
+#include "header.h"
 
 #define FONT_SIZE		  64
 #define FONT_TEXTURE_SIZE 512

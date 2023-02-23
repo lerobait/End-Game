@@ -1,14 +1,4 @@
-#include "../common.h"
-
-#include "../entities/blueSoldier.h"
-#include "../entities/doors.h"
-#include "../entities/greenSoldier.h"
-#include "../entities/keycards.h"
-#include "../entities/oilDrum.h"
-#include "../entities/player.h"
-#include "../entities/powerup.h"
-#include "../entities/target.h"
-#include "entityFactory.h"
+#include "header.h"
 
 extern Stage stage;
 

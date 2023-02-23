@@ -1,11 +1,4 @@
-#include <SDL2/SDL_mixer.h>
-
-#include "../common.h"
-
-#include "../json/cJSON.h"
-#include "../system/sound.h"
-#include "../system/util.h"
-#include "game.h"
+#include "header.h"
 
 #define SAVE_GAME_FILENAME "save.json"
 
