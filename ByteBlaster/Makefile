@@ -1,16 +1,16 @@
+# имя библиотеки
 NAME = endgame
 
+# папка с исходниками
 SRC_DIR = src
 
+# папка, куда будут складываться объектные файлы
 OBJ_DIR = obj
 
+# папка с хедерами
 INC_DIR = inc
 
-SRCS = src/*.c
-
-INC = inc/*.h
-
-SDL = -std=c11 -F resource/framework -I resource/framework/SDL2.framework/SDL2 -I resource/framework/SDL2_image.framework/SDL2_image
+SDL = -F resource/framework -I resource/framework/SDL2.framework/SDL2 -I resource/framework/SDL2_image.framework/SDL2_image
 
 # сделать список всех файлов в папке src, которые имеют расширение .с
 # формат каждой записи src/<file_name>.c
@@ -21,6 +21,7 @@ SRC_FILES = $(wildcard $(SRC_DIR)/*.c)
 # расширение с .с на .о
 # результат выполнения src/<file_name>.o  --> obj/<file_name>.o
 # о всех манипуляциях с именами можно почитать тут
+# https://www.gnu.org/software/make/manual/html_node/File-Name-Functions.html
 OBJ_FILES = $(addprefix $(OBJ_DIR)/, $(notdir $(SRC_FILES:%.c=%.o)))
 
 # сделать список всех файлов в папке inc, которые имеют расширение .h
@@ -28,11 +29,11 @@ OBJ_FILES = $(addprefix $(OBJ_DIR)/, $(notdir $(SRC_FILES:%.c=%.o)))
 INC_FILES = $(wildcard $(INC_DIR)/*.h)
 
 # компилятор для создания o-файлов
-CC = clang-14
+CC = clang
 
 # флаги для компилятора (добабить префикс -W ко всем записям после
 # запятой)
-CFLAGS = $(addprefix -W, all extra error pedantic) \
+CFLAGS = -std=c11 $(addprefix -W, all extra error pedantic) -g \
 
 SDL_FLAGS = -rpath resource/framework -framework SDL2 \
 		-framework SDL2_image \
@@ -51,19 +52,21 @@ AFLAGS = rcs
 MKDIR = mkdir -p
 RM = rm -rf
 
-all: 
-	@$(CC) $(CFLAGS) -o $(NAME) src/system/error.c
+# главная цель, при ее вызове вызывается цель libmx.a
+all: $(NAME)
 
 # цель зависит от времени создания o-файлов, т.е если находится какой-то
 # о-файл время последней модификации которого позже, чем время последней
 # модификации файла libmx.a, то будут запущены инструкции в этой цели
 # $@ - переменная, которая означает имя цели
 # $^ - переменная, которая означает все зависимости текущей цели
+# просто для красивой оригинальной записи ;)
 $(NAME): $(OBJ_FILES)
 	@$(CC) $(CFLAGS) $^ -o $@ -I $(INC_DIR) $(SDL_FLAGS) $(SDL)
 	@printf "\r\33[2K$@\t \033[32;1mcreated\033[0m\n"
 
 # перед компиляцией o-файлов создаем папку obj, про пайпы в мейкафайле
+# https://www.gnu.org/software/make/manual/html_node/Prerequisite-Types.html
 $(OBJ_FILES): | $(OBJ_DIR)
 
 # сравниваем время последней модификации по одному каждого о-файла
