@@ -28,7 +28,7 @@ OBJ_FILES = $(addprefix $(OBJ_DIR)/, $(notdir $(SRC_FILES:%.c=%.o)))
 INC_FILES = $(wildcard $(INC_DIR)/*.h)
 
 # компилятор для создания o-файлов
-CC = clang
+CC = clang-14
 
 # флаги для компилятора (добабить префикс -W ко всем записям после
 # запятой)
