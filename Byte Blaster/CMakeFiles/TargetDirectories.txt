@@ -1,3 +1,0 @@
-/home/bogdan/Gunner on C/gunner-15/CMakeFiles/gunner15.dir
-/home/bogdan/Gunner on C/gunner-15/CMakeFiles/edit_cache.dir
-/home/bogdan/Gunner on C/gunner-15/CMakeFiles/rebuild_cache.dir
