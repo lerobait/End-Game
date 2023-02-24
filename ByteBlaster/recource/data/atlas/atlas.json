@@ -208,7 +208,7 @@
 		"rotated" : 0
 	},
 	{
-		"filename" : "gfx/sprites/greyOilDrum.png",
+		"filename" : "gfx/sprites/greyServ.png",
 		"x" : 954,
 		"y" : 111,
 		"w" : 48,
@@ -216,7 +216,7 @@
 		"rotated" : 0
 	},
 	{
-		"filename" : "gfx/sprites/greenOilDrum.png",
+		"filename" : "gfx/sprites/greenServ.png",
 		"x" : 146,
 		"y" : 477,
 		"w" : 48,
@@ -224,7 +224,7 @@
 		"rotated" : 0
 	},
 	{
-		"filename" : "gfx/sprites/blueOilDrum.png",
+		"filename" : "gfx/sprites/blueServ.png",
 		"x" : 195,
 		"y" : 477,
 		"w" : 48,
@@ -392,7 +392,7 @@
 		"rotated" : 0
 	},
 	{
-		"filename" : "gfx/hud/oilDrumIcon.png",
+		"filename" : "gfx/hud/ServIcon.png",
 		"x" : 1000,
 		"y" : 295,
 		"w" : 24,

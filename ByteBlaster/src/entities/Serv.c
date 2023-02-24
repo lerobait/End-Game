@@ -10,20 +10,20 @@ static void draw(Entity *self);
 static void takeDamage(Entity *self, int damage, Entity *attacker);
 
 static AtlasImage *textures[NUM_TEXTURES] = {NULL};
-static int nearestOilDrumDistance;
+static int nearestServDistance;
 
-void initOilDrum(Entity *e) {
-	OilDrum *o;
+void initServ(Entity *e) {
+	Serv *o;
 
-	o = malloc(sizeof(OilDrum));
-	memset(o, 0, sizeof(OilDrum));
+	o = malloc(sizeof(Serv));
+	memset(o, 0, sizeof(Serv));
 
 	o->life = 12;
 
 	if(textures[0] == NULL) {
-		textures[0] = getAtlasImage("gfx/sprites/greenOilDrum.png", 1);
-		textures[1] = getAtlasImage("gfx/sprites/blueOilDrum.png", 1);
-		textures[2] = getAtlasImage("gfx/sprites/greyOilDrum.png", 1);
+		textures[0] = getAtlasImage("gfx/sprites/greenServ.png", 1);
+		textures[1] = getAtlasImage("gfx/sprites/blueServ.png", 1);
+		textures[2] = getAtlasImage("gfx/sprites/greyServ.png", 1);
 	}
 	e->flags = EF_SOLID;
 
@@ -36,13 +36,13 @@ void initOilDrum(Entity *e) {
 	e->draw = draw;
 	e->takeDamage = takeDamage;
 
-	stage.numOilDrums++;
+	stage.numServ++;
 }
 static void tick(Entity *self) {
-	OilDrum *o;
+	Serv *o;
 	int	dist;
 
-	o = (OilDrum *)self->data;
+	o = (Serv *)self->data;
 
 	o->damageTimer = MAX(o->damageTimer - app.deltaTime, 0);
 
@@ -51,17 +51,17 @@ static void tick(Entity *self) {
 
 	dist = getDistance(self->x, self->y, stage.player->x, stage.player->y);
 
-	if(stage.nearestOilDrum == NULL || dist < nearestOilDrumDistance) {
-		stage.nearestOilDrum = self;
+	if(stage.nearestServ == NULL || dist < nearestServDistance) {
+		stage.nearestServ = self;
 
-		nearestOilDrumDistance = dist;
+		nearestServDistance = dist;
 	}
 }
 static void draw(Entity *self) {
-	OilDrum *o;
+	Serv *o;
 	int	x, y;
 
-	o = (OilDrum *)self->data;
+	o = (Serv *)self->data;
 
 	x = self->x - stage.camera.x;
 	y = self->y - stage.camera.y;
@@ -76,10 +76,10 @@ static void draw(Entity *self) {
 	}
 }
 static void takeDamage(Entity *self, int damage, Entity *attacker) {
-	OilDrum *o;
+	Serv *o;
 	int	i, x, y;
 
-	o = (OilDrum *)self->data;
+	o = (Serv *)self->data;
 
 	o->damageTimer = 2;
 
@@ -102,9 +102,9 @@ static void takeDamage(Entity *self, int damage, Entity *attacker) {
 		}
 		self->dead = 1;
 
-		stage.numOilDrums--;
+		stage.numServ--;
 
-		if(stage.numOilDrums <= 0) {
+		if(stage.numServ <= 0) {
 			updateStageStatus(MISSION_COMPLETE);
 		}
 		playSound(SND_BIG_EXPLOSION, CH_ANY);

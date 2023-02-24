@@ -5,12 +5,12 @@
     "y": 256
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 958,
     "y": 2416
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 858,
     "y": 2416
   },
@@ -40,7 +40,7 @@
     "y": 400
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 3577,
     "y": 497
   },
@@ -50,7 +50,7 @@
     "y": 448
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 4775,
     "y": 228
   },
@@ -75,7 +75,7 @@
     "y": 928
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 6387,
     "y": 977
   },
@@ -100,7 +100,7 @@
     "y": 352
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 7989,
     "y": 257
   },
@@ -115,7 +115,7 @@
     "y": 448
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 9250,
     "y": 545
   },
@@ -140,7 +140,7 @@
     "y": 1648
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 9837,
     "y": 1601
   },
@@ -165,7 +165,7 @@
     "y": 1552
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 2103,
     "y": 1668
   },
@@ -210,7 +210,7 @@
     "y": 2032
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 7048,
     "y": 2225
   },
@@ -230,7 +230,7 @@
     "y": 2848
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 6253,
     "y": 3012
   },
@@ -255,22 +255,22 @@
     "y": 2944
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 8557,
     "y": 2820
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 8864,
     "y": 2849
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 9904,
     "y": 3281
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 9583,
     "y": 3521
   },
@@ -290,7 +290,7 @@
     "y": 3904
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 9212,
     "y": 4356
   },
@@ -335,7 +335,7 @@
     "y": 3808
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 5579,
     "y": 3857
   },
@@ -355,7 +355,7 @@
     "y": 3904
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 4128,
     "y": 3905
   },
@@ -370,17 +370,17 @@
     "y": 4288
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 2325,
     "y": 4337
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 2110,
     "y": 4385
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 1650,
     "y": 3953
   },
@@ -400,27 +400,27 @@
     "y": 4384
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 3700,
     "y": 2496
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 3800,
     "y": 2496
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 3900,
     "y": 2496
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 4000,
     "y": 2496
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 773,
     "y": 3905
   },
@@ -430,12 +430,12 @@
     "y": 3856
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 5912,
     "y": 4337
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 5687,
     "y": 4404
   },
@@ -455,7 +455,7 @@
     "y": 4432
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 3477,
     "y": 4241
   },
@@ -490,7 +490,7 @@
     "y": 2512
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 4825,
     "y": 2724
   },
@@ -500,7 +500,7 @@
     "y": 2944
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 4321,
     "y": 3089
   },
@@ -510,7 +510,7 @@
     "y": 3136
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 3126,
     "y": 3329
   },
@@ -525,7 +525,7 @@
     "y": 3616
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 1378,
     "y": 3617
   },
@@ -545,7 +545,7 @@
     "y": 2032
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 730,
     "y": 2081
   },
@@ -560,7 +560,7 @@
     "y": 2656
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 88,
     "y": 2465
   },
@@ -575,7 +575,7 @@
     "y": 2032
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 2076,
     "y": 2081
   },
@@ -590,17 +590,17 @@
     "y": 2032
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 7908,
     "y": 2081
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 7382,
     "y": 2052
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 6921,
     "y": 1841
   },
@@ -610,17 +610,17 @@
     "y": 1792
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 6494,
     "y": 1812
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 6393,
     "y": 1841
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 5877,
     "y": 1553
   },
@@ -645,7 +645,7 @@
     "y": 1072
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 3458,
     "y": 1092
   },
@@ -655,7 +655,7 @@
     "y": 880
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 2525,
     "y": 833
   },
@@ -690,12 +690,12 @@
     "y": 1312
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 2932,
     "y": 1380
   },
   {
-    "type": "oilDrum",
+    "type": "Serv",
     "x": 3295,
     "y": 1313
   },
@@ -775,17 +775,17 @@
 	"y" : 3840
   },
   {
-	"type" : "oilDrum",
+	"type" : "Serv",
 	"x" : 9504,
 	"y" : 4416
   },
   {
-	"type" : "oilDrum",
+	"type" : "Serv",
 	"x" : 9600,
 	"y" : 4416
   },
   {
-	"type" : "oilDrum",
+	"type" : "Serv",
 	"x" : 9696,
 	"y" : 4416
   }

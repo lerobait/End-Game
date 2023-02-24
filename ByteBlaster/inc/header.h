@@ -232,7 +232,7 @@ typedef struct {
 typedef struct {
 	int life;
 	double damageTimer;
-} OilDrum;
+} Serv;
 
 typedef struct {
 	double life;
@@ -351,8 +351,8 @@ typedef struct {
 	int	map[MAP_WIDTH][MAP_HEIGHT];
 	SDL_Point camera;
 	Quadtree quadtree;
-	Entity *nearestOilDrum;
-	int	numOilDrums;
+	Entity *nearestServ;
+	int	numServ;
 	double time;
 } Stage;
 
@@ -433,7 +433,7 @@ int main(int argc, char *argv[]);
 int	isInsideMap(int x, int y);
 void drawMap(void);
 void initMap(void);
-void initOilDrum(Entity *e);
+void initServ(Entity *e);
 void initOptions(void (*_preLogic)(void), void (*_preDraw)(void), void (*_postOptions)(void));
 int	 resetPlayer(void);
 void initPlayer(Entity *e);

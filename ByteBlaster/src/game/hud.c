@@ -4,8 +4,8 @@ extern App app;
 extern Stage stage;
 
 static void drawPlayerLife(Gunner *g);
-static void drawOilDrums(void);
-static void drawOilDrumArrow(void);
+static void drawServ(void);
+static void drawServArrow(void);
 static void drawKeycards(Gunner *g);
 static void drawTime(void);
 
@@ -15,7 +15,7 @@ static AtlasImage *playerLifeBlockWarning;
 static AtlasImage *keycard[KEYCARD_MAX];
 static AtlasImage *keycardEmpty;
 static AtlasImage *gunnerIcon;
-static AtlasImage *oilDrumIcon;
+static AtlasImage *ServIcon;
 static AtlasImage *arrow;
 static double playerLifeWarningTimer;
 
@@ -37,7 +37,7 @@ void initHud(void) {
 
 		gunnerIcon = getAtlasImage("gfx/hud/gunnerIcon.png", 1);
 
-		oilDrumIcon = getAtlasImage("gfx/hud/oilDrumIcon.png", 1);
+		ServIcon = getAtlasImage("gfx/hud/ServIcon.png", 1);
 
 		arrow = getAtlasImage("gfx/hud/arrow.png", 1);
 	}
@@ -60,9 +60,9 @@ void drawHud(void) {
 
 	drawPlayerLife(g);
 
-	drawOilDrumArrow();
+	drawServArrow();
 
-	drawOilDrums();
+	drawServs();
 
 	drawTime();
 
@@ -99,22 +99,22 @@ static void drawPlayerLife(Gunner *g) {
 
 	app.fontScale = 1.0;
 }
-static void drawOilDrums(void) {
+static void drawServs(void) {
 	char text[8];
 
-	blitAtlasImage(oilDrumIcon, 850, 5, 0, SDL_FLIP_NONE);
+	blitAtlasImage(ServIcon, 850, 5, 0, SDL_FLIP_NONE);
 
 	app.fontScale = 0.75;
 
-	sprintf(text, "x %d", stage.numOilDrums);
+	sprintf(text, "x %d", stage.numServs);
 
 	drawText(text, 905, 0, 255, 255, 255, TEXT_ALIGN_LEFT, 0);
 
 	app.fontScale = 1.0;
 }
-static void drawOilDrumArrow(void) {
-	if(stage.nearestOilDrum != NULL) {
-		blitRotated(arrow, 805, 20, getAngle(stage.player->x, stage.player->y, stage.nearestOilDrum->x, stage.nearestOilDrum->y));
+static void drawServArrow(void) {
+	if(stage.nearestServ != NULL) {
+		blitRotated(arrow, 805, 20, getAngle(stage.player->x, stage.player->y, stage.nearestServ->x, stage.nearestServ->y));
 	}
 }
 static void drawTime(void) {

@@ -101,7 +101,7 @@ static void doStage(void) {
 			}
 		}
 	}
-	stage.nearestOilDrum = NULL;
+	stage.nearestServ = NULL;
 
 	doBanner();
 

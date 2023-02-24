@@ -21,7 +21,7 @@ void initEntityFactory(void) {
 	addInitFunc("weakDoor", initWeakDoor);
 	addInitFunc("redDoor", initRedDoor);
 	addInitFunc("greenDoor", initGreenDoor);
-	addInitFunc("oilDrum", initOilDrum);
+	addInitFunc("Serv", initServ);
 	addInitFunc("redKeycard", initRedKeycard);
 	addInitFunc("greenKeycard", initGreenKeycard);
 	addInitFunc("blueKeycard", initBlueKeycard);
