@@ -1,13 +1,9 @@
-# имя библиотеки
 NAME = endgame
 
-# папка с исходниками
 SRC_DIR = src
 
-# папка, куда будут складываться объектные файлы
 OBJ_DIR = obj
 
-# папка с хедерами
 INC_DIR = inc
 
 SRCS = src/*.c
@@ -25,7 +21,6 @@ SRC_FILES = $(wildcard $(SRC_DIR)/*.c)
 # расширение с .с на .о
 # результат выполнения src/<file_name>.o  --> obj/<file_name>.o
 # о всех манипуляциях с именами можно почитать тут
-# https://www.gnu.org/software/make/manual/html_node/File-Name-Functions.html
 OBJ_FILES = $(addprefix $(OBJ_DIR)/, $(notdir $(SRC_FILES:%.c=%.o)))
 
 # сделать список всех файлов в папке inc, которые имеют расширение .h
